@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">birdApp</string>
+    <string name="all_parrots">All parrots</string>
+    <string name="all_relations">all relations</string>
+    <string name="all_sell">all sell</string>
+    <string name="all_hatches">all hatches</string>
+    <string name="all_birds">all birds</string>
+    <string name="my_birds">My Birds</string>
+    <string name="all_clutches">all clutches</string>
+    <string name="search">Search</string>
+
+    <string name="id">Id :</string>
+
+    <string-array name="birds">
+        <item>Budgies</item>
+        <item>Pigeon</item>
+        <item>Macaw</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

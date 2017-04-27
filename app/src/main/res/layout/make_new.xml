@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.base7.jd.birdapp.activities.AddBirds">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/selectImage"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/list_icon"
+        android:src="@mipmap/ic_select_image" />
+
+    <LinearLayout
+        android:id="@+id/contentArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/spinner"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Ring No."
+                    android:textColor="@color/listItemOne" />
+
+                <EditText
+                    android:id="@+id/txtRingNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/spinner"
+                    android:hint="enter ring no."
+                    android:inputType="number"
+                    android:padding="6dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Gender"
+                    android:textColor="@color/listItemTwo" />
+
+                <RelativeLayout
+                    android:id="@+id/spnGenderLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/spinner">
+
+                    <Spinner
+                        android:id="@+id/spnGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter ring no." />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Price"
+                    android:textColor="@color/listItemThree" />
+
+                <EditText
+                    android:id="@+id/txtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="34dp"
+                    android:background="@drawable/spinner"
+                    android:hint="enter price"
+                    android:inputType="number"
+                    android:padding="6dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Category"
+                    android:textColor="@color/listItemFour" />
+
+                <RelativeLayout
+                    android:id="@+id/spnCategoryLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="34dp"
+                    android:background="@drawable/spinner">
+
+                    <Spinner
+                        android:id="@+id/spnCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter ring no." />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtAges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Age"
+                    android:textColor="@color/listItemOne" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtAges"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinner">
+
+                    <EditText
+                        android:id="@+id/txtAge"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/spinner"
+                        android:hint="age"
+                        android:inputType="number"
+                        android:padding="6dp" />
+
+                    <Spinner
+                        android:id="@+id/spnAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/txtAge"
+                        android:textColor="@color/listItemOne" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Eye"
+                    android:textColor="@color/listItemTwo" />
+
+                <RelativeLayout
+                    android:id="@+id/spnEyeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="34dp"
+                    android:background="@drawable/spinner">
+
+                    <Spinner
+                        android:id="@+id/spnEye"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter ring no." />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Clutch Id"
+                android:textColor="@color/listItemThree" />
+
+            <EditText
+                android:id="@+id/txtClutchId"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/spinner"
+                android:hint="enter clutch id"
+                android:inputType="number"
+                android:padding="6dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentArea"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_save"
+        android:text="Add"
+        android:textColor="#fff" />
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.base7.jd.birdapp.activities.AddBirds">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/spinner"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Name"
+                    android:textColor="@color/listItemOne" />
+
+                <EditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/spinner"
+                    android:hint="enter name"
+                    android:padding="6dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Contact No."
+                    android:textColor="@color/listItemTwo" />
+
+                <EditText
+                    android:id="@+id/txtContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/spinner"
+                    android:hint="enter contact no."
+                    android:padding="6dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Address"
+                    android:textColor="@color/listItemThree" />
+
+                <EditText
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/spinner"
+                    android:hint="enter address"
+                    android:padding="6dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/maleLayout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/list">
+
+            <TextView
+                android:id="@+id/birdRingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/list_icon"
+                android:padding="15dp"
+                android:text="No Selected"
+                android:textColor="@color/listItemFour"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnBird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/birdRingNo"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/select_male"
+                android:padding="5dp"
+                android:text="select bird"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainFrame"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_save"
+        android:text="Sell Bird"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

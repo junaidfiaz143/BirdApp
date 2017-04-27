@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/birdIdn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/birdId"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="junaid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/birdIdv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/idBv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="id" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/birdGender"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/birdAge"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="junaid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/birdIdd"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/birdCategory"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="cockatoo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

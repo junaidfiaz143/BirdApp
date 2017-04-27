@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.base7.jd.birdapp.activities.AddBirds">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/selectImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list_icon"
+        android:src="@mipmap/ic_select_image" />
+
+    <RelativeLayout
+        android:id="@+id/contentArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/spinner"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Ring No."
+            android:textColor="@color/listItemOne" />
+
+        <EditText
+            android:id="@+id/txtRingNo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/spinner"
+            android:hint="enter ring no."
+            android:padding="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/txtRingNo"
+            android:text="Gender"
+            android:textColor="@color/listItemTwo" />
+
+        <RelativeLayout
+            android:id="@+id/spnGenderLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@id/txtRingNo"
+            android:background="@drawable/spinner">
+
+            <Spinner
+                android:id="@+id/spnGender"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="enter ring no." />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRingNo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Price"
+            android:textColor="@color/listItemThree" />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRingNo"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/spinner"
+            android:hint="enter price"
+            android:padding="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spnGenderLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/txtPrice"
+            android:text="Category"
+            android:textColor="@color/listItemFour" />
+
+        <RelativeLayout
+            android:id="@+id/spnCategoryLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRingNo"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="34dp"
+            android:layout_toRightOf="@id/txtPrice"
+            android:background="@drawable/spinner">
+
+            <Spinner
+                android:id="@+id/spnCategory"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="enter ring no." />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPrice"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="age"
+            android:textColor="@color/listItemOne" />
+
+        <EditText
+            android:id="@+id/txtAge"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPrice"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/spinner"
+            android:hint="enter age"
+            android:padding="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spnCategoryLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtAge"
+            android:text="Eye"
+            android:textColor="@color/listItemTwo" />
+
+        <RelativeLayout
+            android:id="@+id/spnEyeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spnCategoryLayout"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="34dp"
+            android:layout_toRightOf="@id/txtAge"
+            android:background="@drawable/spinner">
+
+            <Spinner
+                android:id="@+id/spnEye"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="enter ring no." />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Clutch Id"
+            android:textColor="@color/listItemThree" />
+
+        <EditText
+            android:id="@+id/txtClutchId"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/spinner"
+            android:hint="enter clutch id"
+            android:padding="6dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentArea"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_save"
+        android:text="Update"
+        android:textColor="#fff" />
+</RelativeLayout>

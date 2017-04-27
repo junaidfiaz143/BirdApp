@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.base7.jd.birdapp.activities.AddBirds">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/spinner">
+
+        <RelativeLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+
+            <RelativeLayout
+                android:id="@+id/maleLayout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/list">
+
+                <TextView
+                    android:id="@+id/maleRingNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_icon"
+                    android:padding="15dp"
+                    android:text="No Selected"
+                    android:textColor="@color/listItemFour"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/maleRingNo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/select_male"
+                    android:onClick="selectMale"
+                    android:padding="5dp"
+                    android:text="select male"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/femaleLayout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@id/maleLayout"
+                android:layout_toRightOf="@id/maleLayout"
+                android:background="@drawable/list">
+
+                <TextView
+                    android:id="@+id/femaleRingNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_icon"
+                    android:padding="15dp"
+                    android:text="No Selected"
+                    android:textColor="@color/listItemOne"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/femaleRingNo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/select_bird"
+                    android:onClick="selectFemale"
+                    android:padding="5dp"
+                    android:text="select female"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainContainer"
+            android:layout_marginLeft="10dp"
+            android:text="No. of Eggs"
+            android:textColor="@color/listItemFour" />
+
+        <EditText
+            android:id="@+id/txtNoofEggs"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainContainer"
+            android:layout_margin="5dp"
+            android:hint="enter no. of eggs"
+            android:inputType="number" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainContainer"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txtNoofEggs"
+            android:text="Clutch Id"
+            android:textColor="@color/listItemOne" />
+
+        <EditText
+            android:id="@+id/txtClutchId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainContainer"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/txtNoofEggs"
+            android:hint="enter clutch id"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_save"
+        android:text="save"
+        android:textColor="#fff" />
+
+</RelativeLayout>

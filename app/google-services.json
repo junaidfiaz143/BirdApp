@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "205000076085",
+    "firebase_url": "https://tryproject-dde4c.firebaseio.com",
+    "project_id": "tryproject-dde4c",
+    "storage_bucket": "tryproject-dde4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205000076085:android:1f58bf7fb14ad855",
+        "android_client_info": {
+          "package_name": "com.example.mjunaidfiaz.json"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205000076085-7vu60ciujrn0l7r20ibusjcadh2hof0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2flXc24GhDNkDFASGgPfXsYSbslpBRP8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205000076085:android:67c93bab5c22929d",
+        "android_client_info": {
+          "package_name": "com.example.mjunaidfiaz.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205000076085-is2oe0icgg1qngprqo87tjr8kfvkmh31.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mjunaidfiaz.firebasedemo",
+            "certificate_hash": "9DF2119F35EDD91971B8D678993F9F9AD60E828C"
+          }
+        },
+        {
+          "client_id": "205000076085-7vu60ciujrn0l7r20ibusjcadh2hof0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2flXc24GhDNkDFASGgPfXsYSbslpBRP8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205000076085-7vu60ciujrn0l7r20ibusjcadh2hof0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205000076085:android:55cb6e9d0555b72a",
+        "android_client_info": {
+          "package_name": "com.base7.jd.birdapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205000076085-7vu60ciujrn0l7r20ibusjcadh2hof0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2flXc24GhDNkDFASGgPfXsYSbslpBRP8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.base7.jd.birdapp.fragments.BirdSummary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtAllBirds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAllBirds"
+                android:layout_centerHorizontal="true"
+                android:text="Birds"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtAllMaleBirds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAllMaleBirds"
+                android:layout_centerHorizontal="true"
+                android:text="Male"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtAllFemaleBirds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/listItemOne"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAllFemaleBirds"
+                android:layout_centerHorizontal="true"
+                android:text="Female"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtAllDeadBirds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAllDeadBirds"
+                android:layout_centerHorizontal="true"
+                android:text="Dead"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/grey_touch"
+        android:padding="10dp"
+        android:text="All Summary" />
+
+</RelativeLayout>

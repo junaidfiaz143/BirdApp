@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.base7.jd.birdapp.fragments.UserInfo">
+
+    <TextView
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/grey_touch"
+        android:padding="10dp"
+        android:text="LOGOUT"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <View
+        android:id="@+id/LogoutLineDivider"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:layout_above="@id/btnLogout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_border"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <View
+        android:id="@+id/lineDivider1"
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineDivider1"
+        android:layout_centerHorizontal="true"
+        android:text="junaidfiaz143"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <View
+        android:id="@+id/lineDivider2"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <LinearLayout
+        android:id="@+id/txtAllDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineDivider2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtAllBirds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAllBirds"
+                android:layout_centerHorizontal="true"
+                android:text="Birds"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtAllRelations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAllRelations"
+                android:layout_centerHorizontal="true"
+                android:text="Relations"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtAllClutches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAllClutches"
+                android:layout_centerHorizontal="true"
+                android:text="Clutches"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

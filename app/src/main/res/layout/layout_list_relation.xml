@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/list">
+
+        <TextView
+            android:id="@+id/clutchId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="@string/id"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clutchId"
+            android:layout_margin="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/listItemTwo">
+
+                <ImageView
+                    android:id="@+id/imgMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_icon"
+                    android:padding="5dp"
+                    android:src="@mipmap/bird" />
+
+                <TextView
+                    android:id="@+id/maleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgMale"
+                    android:layout_centerInParent="true"
+                    android:text="Male Id: "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/listItemOne">
+
+                <ImageView
+                    android:id="@+id/imgFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_icon"
+                    android:padding="5dp"
+                    android:src="@mipmap/bird" />
+
+                <TextView
+                    android:id="@+id/femaleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgFemale"
+                    android:layout_centerInParent="true"
+                    android:text="Female Id: "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

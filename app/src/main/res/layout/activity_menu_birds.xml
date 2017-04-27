@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MenuBirds">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/plus" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bird Farm"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#FFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_above="@+id/textView2"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="where you manage your bird!"
+                    android:textColor="#EFEFEF"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="37dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/all_birds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="AllBirds"
+                    android:text="@string/all_birds" />
+
+                <Button
+                    android:id="@+id/all_relations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/all_birds"
+                    android:layout_toRightOf="@id/all_birds"
+                    android:onClick="AllRelations"
+                    android:text="@string/all_relations" />
+
+                <Button
+                    android:id="@+id/all_sell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/all_birds"
+                    android:onClick="AllSell"
+                    android:text="@string/all_sell" />
+
+                <Button
+                    android:id="@+id/all_clutches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/all_relations"
+                    android:layout_toEndOf="@id/all_sell"
+                    android:layout_toRightOf="@id/all_sell"
+                    android:onClick="AllClutches"
+                    android:text="@string/all_clutches" />
+
+                <Button
+                    android:id="@+id/makeRelation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/all_clutches"
+                    android:onClick="MakeRelation"
+                    android:text="make relation" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/all_clutches"
+                    android:layout_toEndOf="@id/makeRelation"
+                    android:layout_toRightOf="@id/makeRelation"
+                    android:onClick="AddCategory"
+                    android:text="add category" />
+
+                <Button
+                    android:id="@+id/birdSell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/makeRelation"
+                    android:onClick="BirdSell"
+                    android:text="sell bird" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
