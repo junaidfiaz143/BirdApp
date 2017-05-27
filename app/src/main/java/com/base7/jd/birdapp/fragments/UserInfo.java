@@ -2,7 +2,6 @@ package com.base7.jd.birdapp.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,6 +11,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.base7.jd.birdapp.R;
@@ -37,7 +38,9 @@ public class UserInfo extends Fragment {
 
     private TextView txtAllBirds, txtAllRelations, txtAllClutches;
 
-    private ProgressDialog dialog;
+    private ProgressBar progressBar;
+
+    private LinearLayout txtAllDetails;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,9 +49,11 @@ public class UserInfo extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_user_info, container, false);
 
-        dialog = new ProgressDialog(getActivity());
-        dialog.setMessage("please wait..!");
-        dialog.show();
+        txtAllDetails = (LinearLayout) view.findViewById(R.id.txtAllDetails);
+
+        progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
+        txtAllDetails.setVisibility(View.GONE);
+        progressBar.setVisibility(View.VISIBLE);
 
         upload();
 
@@ -93,53 +98,42 @@ public class UserInfo extends Fragment {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.getChildrenCount() > 0) {
                     txtAllBirds.setText("" + dataSnapshot.getChildrenCount());
-                    dialog.hide();
-                } else
-                    dialog.hide();
-
+                    txtAllDetails.setVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.GONE);
+                }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
-                dialog.hide();
             }
         });
 
         rfRelations.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                dialog.show();
                 if (dataSnapshot.getChildrenCount() > 0) {
                     txtAllRelations.setText("" + dataSnapshot.getChildrenCount());
-                    dialog.hide();
-                } else
-                    dialog.hide();
-
+                }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
-                dialog.hide();
             }
         });
 
         rfClutches.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                dialog.show();
                 if (dataSnapshot.getChildrenCount() > 0) {
                     txtAllClutches.setText("" + dataSnapshot.getChildrenCount());
-                    dialog.hide();
-                } else
-                    dialog.hide();
+                }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
-                dialog.hide();
             }
         });
 

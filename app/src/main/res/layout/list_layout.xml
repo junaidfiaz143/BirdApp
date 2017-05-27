@@ -34,7 +34,6 @@
                 android:layout_toEndOf="@id/img"
                 android:layout_toRightOf="@id/img"
                 android:text="id"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#ffffff" />
 
             <LinearLayout

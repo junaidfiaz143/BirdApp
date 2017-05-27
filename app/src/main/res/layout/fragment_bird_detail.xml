@@ -8,16 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/round_border"
-            android:padding="10dp"
-            android:src="@mipmap/ic_launcher" />
-
         <View
             android:id="@+id/lineDivider"
             android:layout_width="40dp"

@@ -17,27 +17,20 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <TextView
-        android:id="@+id/txtSearch"
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:id="@+id/spnSearchLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/appBarLayout"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:text="Month"
-        android:textColor="@color/listItemTwo" />
-
-    <RelativeLayout
-        android:id="@+id/spnSearchLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtSearch"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/spinner">
+        android:background="@drawable/spinner"
+        android:backgroundTint="#e0e0e0">
 
         <Spinner
             android:id="@+id/spnSearch"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp" />
     </RelativeLayout>

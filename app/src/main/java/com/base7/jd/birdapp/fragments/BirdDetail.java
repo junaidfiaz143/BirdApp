@@ -50,7 +50,7 @@ public class BirdDetail extends Fragment {
 
         dialog = new ProgressDialog(getActivity());
         dialog.setMessage("please wait..!");
-        dialog.show();
+       // dialog.show();
 
         upload();
 

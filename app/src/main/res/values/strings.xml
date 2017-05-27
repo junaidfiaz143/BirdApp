@@ -17,7 +17,8 @@
         <item>Macaw</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="paramsString">%s</string>
+    <string name="paramsInt">%d</string>
+    <string name="paramsLong">%/f</string>
 
 </resources>

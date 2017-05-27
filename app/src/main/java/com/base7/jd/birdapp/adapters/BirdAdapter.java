@@ -75,7 +75,7 @@ public class BirdAdapter extends RecyclerView.Adapter<BirdAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
 
         Bird bird = birdList.get(position);
-        holder.birdId.setText(bird.getId());
+        holder.birdId.setText("id: " + bird.getId());
         holder.birdAge.setText(bird.getAge());
         holder.birdGender.setText(bird.getGender());
     }
